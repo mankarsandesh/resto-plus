@@ -1,10 +1,10 @@
 import React from "react";
-import { Route, IndexRoute } from "react-router";
+import { Link } from "react-router-dom";
 
 function Search() {
   return (
     <div>
-         <section className="main-block">
+      <section className="main-block">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-5">
@@ -14,7 +14,7 @@ function Search() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <Link to="night-life" className="col-md-4">
               <div className="find-place-img_wrap">
                 <div className="grid">
                   <figure className="effect-ruby">
@@ -30,7 +30,7 @@ function Search() {
                   </figure>
                 </div>
               </div>
-            </div>
+            </Link>
             <div className="col-md-4">
               <div className="row find-img-align">
                 <div className="col-md-12">
